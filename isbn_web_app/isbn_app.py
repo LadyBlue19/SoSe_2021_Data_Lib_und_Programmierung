@@ -21,7 +21,7 @@ def start_page():
 def show_info():
     return "<p>Some Information</p>"
 
-@app.route("/isbn")
-def isbn_display():
+@app.route("/isbn/<isbn>")#<..> ist ein Platzhalter. Dh. dahinter muss noch was kommen. in dem Fall eine Zahl
+def isbn_display(isbn):
     return"<p>ISBN given: </p>"
     
