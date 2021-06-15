@@ -5,7 +5,8 @@ Created on Tue Jun 15 09:51:27 2021
 @author: AFB
 """
 #nach jeder Veränderung -> speichern und in gitBash
-# python -m flask run eingeben??? wenn development ausgeschaltet
+# python -m flask run eingeben??? 
+# wenn development ausgeschaltet ist, dann nicht, nur site erneuern
 from flask import Flask
 
 print (__name__)
@@ -23,5 +24,5 @@ def show_info():
 
 @app.route("/isbn/<isbn>")#<..> ist ein Platzhalter. Dh. dahinter muss noch was kommen. in dem Fall eine Zahl
 def isbn_display(isbn):
-    return"<p>ISBN given: </p>"
+    return"<p>ISBN given: " + isbn + "</p>"
     
